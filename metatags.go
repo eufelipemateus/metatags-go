@@ -39,7 +39,6 @@ func GetMetatagsFromHTML(html string) map[string]string {
 	doc.Find("meta").Each(func(i int, s *goquery.Selection) {
 		if name, exists := s.Attr("name"); exists {
 			value, _ := s.Attr("content")
-			fmt.Printf("%s field: %s\n", name, value)
 			metas[name] = value
 		}
 	})
