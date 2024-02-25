@@ -1,4 +1,4 @@
-module eufelipemateus.com/metatags-go
+module github.com/eufelipemateus/metatags-go
 
 go 1.21
 
