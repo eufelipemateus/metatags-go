@@ -1,7 +1,6 @@
 package metatags
 
 import (
-	"fmt"
 	"io"
 	"log"
 	"net/http"
