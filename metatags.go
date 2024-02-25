@@ -40,6 +40,10 @@ func GetMetatagsFromHTML(html string) map[string]string {
 			value, _ := s.Attr("content")
 			metas[name] = value
 		}
+		if name, exists := s.Attr("property"); exists {
+			value, _ := s.Attr("content")
+			metas[name] = value
+		}
 	})
 
 	return metas
